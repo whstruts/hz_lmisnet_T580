@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="600dp"
+        android:layout_height="400dp"
+        android:background="@drawable/clspickmsgselect" >
+         
+        <Button
+            android:id="@+id/bt_07"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/clsbtnselect"
+            android:gravity="center"
+            android:textSize="50dp"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/bt_08"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/bt_07"
+            android:layout_toRightOf="@+id/bt_07"
+            android:background="@drawable/clsbtnselect"
+            android:gravity="center"
+            android:textSize="50dp"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/bt_09"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/bt_08"
+            android:layout_toRightOf="@+id/bt_08"
+            android:background="@drawable/clsbtnselect"
+            android:gravity="center"
+            android:text="9"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/bt_04"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bt_07"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/clsbtnselect"
+            android:gravity="center"
+            android:text="4"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/bt_05"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/bt_08"
+            android:layout_alignTop="@+id/bt_04"
+            android:background="@drawable/clsbtnselect"
+            android:gravity="center"
+            android:text="5"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/bt_01"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/bt_04"
+            android:layout_below="@+id/bt_04"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/clsbtnselect"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/bt_06"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/bt_01"
+            android:layout_alignLeft="@+id/bt_09"
+            android:background="@drawable/clsbtnselect"
+            android:gravity="center"
+            android:text="6"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/bt_02"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/bt_05"
+            android:layout_alignTop="@+id/bt_01"
+            android:background="@drawable/clsbtnselect"
+            android:gravity="center"
+            android:text="2"
+            android:textSize="50dp"/>
+
+        <Button
+            android:id="@+id/bt_03"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/bt_06"
+            android:layout_alignTop="@+id/bt_02"
+            android:background="@drawable/clsbtnselect"
+            android:gravity="center"
+            android:text="3"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/bt_00"
+            android:layout_width="450dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bt_01"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/clsbtnselect"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="50dp" />
+        
+        <Button
+            android:id="@+id/bt_del"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+           
+            android:layout_alignTop="@+id/bt_06"
+            android:layout_toRightOf="@+id/bt_06"
+            android:background="@drawable/clsbtnselect"
+            android:gravity="center"
+            android:text="删除"
+            android:textSize="30dp" />
+        
+        <Button
+            android:id="@+id/bt_enl"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_alignTop="@+id/bt_03"
+            android:layout_toRightOf="@+id/bt_03"
+            android:background="@drawable/clsbtnselect"
+            android:gravity="center"
+            android:text="回车"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/bt_clear"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            
+            android:layout_alignTop="@+id/bt_09"
+            android:layout_toRightOf="@+id/bt_09"
+            
+            android:background="@drawable/clsbtnselect"
+            android:gravity="center"
+            android:text="清除"
+            android:textSize="30dp"/>
+ 
+    </RelativeLayout>
+
+</LinearLayout>

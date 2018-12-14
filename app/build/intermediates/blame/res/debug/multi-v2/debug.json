@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\hz_lmisnet_T580\\app\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\hz_lmisnet_T580\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "4,3,12,8,10,6,7,9,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "121,59,492,279,392,175,227,338,444",
+                        "endColumns": "50,60,49,57,50,50,50,52,46",
+                        "endOffsets": "167,115,537,332,438,221,273,386,486"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,106,167,217,275,326,377,428,481",
+                        "endColumns": "50,60,49,57,50,50,50,52,46",
+                        "endOffsets": "101,162,212,270,321,372,423,476,523"
+                    }
+                },
+                {
+                    "source": "C:\\hz_lmisnet_T580\\app\\src\\main\\res\\values\\style.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "0",
+                        "startOffsets": "114",
+                        "endLines": "5",
+                        "endColumns": "8",
+                        "endOffsets": "228"
+                    },
+                    "to": {
+                        "startLines": "11",
+                        "startColumns": "4",
+                        "startOffsets": "528",
+                        "endLines": "13",
+                        "endColumns": "8",
+                        "endOffsets": "640"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+<style name="title_style" parent="android:Theme">
+     <item name="android:windowTitleSize">30dp</item>
+</style>
+</resources>

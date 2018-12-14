@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clrlistback"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+		<LinearLayout
+		    android:id="@+id/rl_operbutton"
+		    android:layout_width="1300dp"
+		    android:layout_height="50dp"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentLeft="true" 
+		    android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+		
+		    <Button
+		        android:id="@+id/bt_query"
+		        android:layout_width="120dp"
+		        android:layout_height="50dp"
+		        android:layout_marginLeft="620dp"
+		        android:background="@drawable/clsbtnselect"
+		        android:gravity="center"
+		        android:text="刷新"
+		        android:textColor="#FFFFFF"
+		        android:textSize="25dp" />
+		
+		    <Button
+		        android:id="@+id/bt_delete"
+		        android:layout_width="120dp"
+		        android:layout_height="50dp"
+		        android:layout_marginLeft="2dp"
+		        android:background="@drawable/clsbtnselect"
+		        android:gravity="center"
+		        android:text="删除"
+		        android:textColor="#FFFFFF"
+		        android:textSize="25dp" />
+		
+		    <Button
+		        android:id="@+id/bt_Return"
+		        android:layout_width="120dp"
+		        android:layout_height="50dp"
+		        android:layout_marginLeft="2dp"
+		        android:background="@drawable/clsbtnselect"
+		        android:gravity="center"
+		        android:text="返回"
+		        android:textColor="#FFFFFF"
+		        android:textSize="25dp" />
+
+		</LinearLayout>
+		
+		<ListView
+		    android:id="@+id/lst_log"
+		    android:layout_width="800dp"
+		    android:layout_height="300dp"
+		    android:layout_above="@+id/rl_operbutton"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="1dp"
+		    android:layout_below="@+id/linearLayout1"
+		    android:background="@drawable/clrlistback"
+		    android:cacheColorHint="#F0F8FF" >
+
+		</ListView>
+
+		<LinearLayout
+		    android:id="@+id/linearLayout1"
+		    android:layout_width="1300dp"
+		    android:layout_height="45dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginTop="5dp"
+		    android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+		    android:background="@drawable/clrlistheadback" >
+
+		    <TextView
+		        android:id="@+id/tv_qyts"
+		        android:layout_width="200dp"
+		        android:layout_height="40dp"
+		        android:background="@drawable/clsbar"
+		        android:gravity="center"
+		        android:text="日期时间 "
+		        android:textColor="#6959CD"
+		        android:textSize="25dp" />
+
+		    <TextView
+		        android:id="@+id/tv_pdts"
+		        android:layout_width="200dp"
+		        android:layout_height="40dp"
+		        android:background="@drawable/clsbar"
+		        android:layout_marginLeft="2dp"
+		        android:gravity="center"
+		        android:text="功能模块"
+		        android:textColor="#6959CD"
+		        android:textSize="25dp" />
+
+		    <TextView
+		        android:id="@+id/tv_lstdts"
+		        android:layout_width="200dp"
+		        android:layout_height="40dp"
+		        android:layout_marginLeft="2dp"
+		        android:background="@drawable/clsbar"
+		        android:gravity="center"
+		        android:text="操作员"
+		        android:textColor="#6959CD"
+		        android:textSize="25dp" />
+
+		    <TextView
+		        android:id="@+id/tv_ztckts"
+		        android:layout_width="140dp"
+		        android:layout_height="40dp"
+		        android:layout_marginLeft="2dp"
+		        android:background="@drawable/clsbar"
+		        android:gravity="center"
+		        android:text="日志描述"
+		        android:textColor="#6959CD"
+		        android:textSize="25dp" />
+		</LinearLayout>
+
+    </RelativeLayout>
+    
+</LinearLayout>

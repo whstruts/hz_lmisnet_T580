@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="1dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:layout_marginTop="1dp"
+    android:background="@drawable/clrlistback" >
+   <!-- 底部按钮布局 -->
+	  <RelativeLayout
+	     android:id="@+id/rl_operbutton"
+	     android:layout_alignParentBottom="true"
+	     android:layout_alignParentLeft="true"
+	     android:layout_alignParentRight="true"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_marginLeft="5dp"
+	     android:layout_marginRight="5dp"
+	     android:background="@drawable/clrlistback" >
+	     
+	     <Button
+            android:id="@+id/bt_refresh"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/clsbtnselect"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="刷新"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+		<Button
+            android:id="@+id/bt_pickwork"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/clsbtnselect"
+            android:layout_toLeftOf="@+id/bt_kccx"
+            android:layout_toRightOf="@+id/bt_refresh"
+            android:gravity="center"
+            android:text="索取任务"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+		<Button
+            android:id="@+id/bt_kccx"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/clsbtnselect"
+            android:layout_toLeftOf="@+id/bt_bhwork"
+            android:gravity="center"
+            android:text="库存查询"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+		<Button
+            android:id="@+id/bt_bhwork"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/clsbtnselect"
+            android:layout_toLeftOf="@+id/bt_zzxcx"
+            android:gravity="center"
+            android:text="补货上架"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+	
+		<Button
+            android:id="@+id/bt_zzxcx"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/clsbtnselect"
+            android:layout_toLeftOf="@+id/bt_zyjl"
+            android:gravity="center"
+            android:text="箱号查询"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+		
+		<Button
+            android:id="@+id/bt_zyjl"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/clsbtnselect"
+            android:layout_toLeftOf="@+id/bt_pc"
+            android:gravity="center"
+            android:text="作业记录"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" /> 
+
+		<Button
+            android:id="@+id/bt_pc"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/clsbtnselect"
+            android:layout_toLeftOf="@+id/bt_Exit"
+            android:gravity="center"
+            android:text="动销盘查"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+		<Button
+            android:id="@+id/bt_Exit"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="2dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/clsbtnselect"
+            android:gravity="center"
+            android:text="退出"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+	   </RelativeLayout>
+       <!-- 温馨提示布局 -->
+	   <RelativeLayout
+	      android:id="@+id/rl_dismess"
+	      android:layout_alignParentLeft="true"
+	      android:layout_alignParentRight="true"
+	      android:layout_above="@+id/rl_operbutton"
+	      android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:layout_marginLeft="5dp"
+	      android:layout_marginRight="5dp"
+	      android:background="@drawable/clrlistback" >
+	      <TextView
+	         android:id="@+id/textView1"
+	         android:layout_width="wrap_content"
+	         android:layout_height="35dp"
+	         android:layout_alignParentLeft="true"
+	         android:gravity="left"
+	         android:text="温馨提示:"
+	         android:textColor="#6959CD"
+	         android:textSize="20dp" />
+	      <TextView
+	         android:id="@+id/tv_ts"
+	         android:layout_alignParentRight="true"
+	         android:layout_width="match_parent"
+	         android:layout_height="35dp"
+	         android:layout_toRightOf="@+id/textView1"
+	         android:layout_marginLeft="3dp"
+	         android:text="欢迎使用平板拣货系统,正在连接服务端，请稍等..."
+	         android:ellipsize="marquee"
+	         android:focusable="true"
+	         android:focusableInTouchMode="true"
+	         android:marqueeRepeatLimit="marquee_forever"
+	         android:scrollHorizontally="true"
+	         android:singleLine="true"
+	         android:textColor="#6959CD"
+	         android:textSize="20dp" />
+	   </RelativeLayout>
+       <!-- 任务状态提示 -->
+       <RelativeLayout
+         android:id="@+id/rl_taskStatus"
+         android:layout_width="wrap_content"
+         android:layout_height="100dp"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_above="@+id/rl_dismess"
+         android:background="@drawable/clrlistback"
+         android:layout_marginTop="2dp" >
+         <TextView
+             android:id="@+id/tv_zyrwts"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:textSize="60dp"
+             android:textColor="#FF0000"
+             android:text="请触摸【刷新】；查看是否有任务"/>
+
+       </RelativeLayout>
+       <!-- 任务数据 -->
+   <RelativeLayout
+	    android:id="@+id/rl_maindata"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_above="@+id/rl_taskStatus"
+	    android:background="@drawable/clrlistheadback" >
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:scrollbars="none" >
+			<RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+			   android:background="@drawable/clrlistback" >
+               <LinearLayout
+	                android:id="@+id/ll_maindisdata"
+	                android:layout_width="match_parent"
+	                android:layout_height="45dp"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignParentTop="true" 
+	                android:background="@drawable/clrlistheadback">
+	                <TextView
+			            android:id="@+id/tv_qyts"
+			            android:layout_width="135dp"
+			            android:layout_height="40dp"
+			            android:background="@drawable/clsbar"
+			            android:layout_marginTop="1dp"
+			            android:gravity="center"
+			            android:text="区域"
+			            android:textColor="#6959CD"
+			            android:textSize="25dp" />
+	                
+	                <TextView
+			            android:id="@+id/tv_qyts3"
+			            android:layout_width="135dp"
+			            android:layout_height="40dp"
+			            android:background="@drawable/clsbar"
+			            android:layout_marginTop="1dp"
+			            android:gravity="center"
+			            android:text="绿色通道"
+			            android:textColor="#6959CD"
+			            android:textSize="25dp" />
+	                
+	                <TextView
+			            android:id="@+id/tv_qyts5"
+			            android:layout_width="135dp"
+			            android:layout_height="40dp"
+			            android:background="@drawable/clsbar"
+			            android:layout_marginTop="1dp"
+			            android:gravity="center"
+			            android:text="自提出库"
+			            android:textColor="#6959CD"
+			            android:textSize="25dp" />
+	                <TextView
+			            android:id="@+id/tv_qyts6"
+			            android:layout_width="135dp"
+			            android:layout_height="40dp"
+			            android:background="@drawable/clsbar"
+			            android:layout_marginTop="1dp"
+			            android:gravity="center"
+			            android:text="普通出库"
+			            android:textColor="#6959CD"
+			            android:textSize="25dp" />
+	                <TextView
+			            android:id="@+id/tv_qyts7"
+			            android:layout_width="135dp"
+			            android:layout_height="40dp"
+			            android:background="@drawable/clsbar"
+			            android:layout_marginTop="1dp"
+			            android:gravity="center"
+			            android:text="被动补货"
+			            android:textColor="#6959CD"
+			            android:textSize="25dp" />
+	                <TextView
+			            android:id="@+id/tv_qyts8"
+			            android:layout_width="135dp"
+			            android:layout_height="40dp"
+			            android:background="@drawable/clsbar"
+			            android:layout_marginTop="1dp"
+			            android:gravity="center"
+			            android:text="主动补货"
+			            android:textColor="#6959CD"
+			            android:textSize="25dp" />
+	                
+	                <TextView
+			            android:id="@+id/tv_qyts10"
+			            android:layout_width="135dp"
+			            android:layout_height="40dp"
+			            android:background="@drawable/clsbar"
+			            android:layout_marginTop="1dp"
+			            android:gravity="center"
+			            android:text="购进退出"
+			            android:textColor="#6959CD"
+			            android:textSize="25dp" />
+	                <TextView
+			            android:id="@+id/tv_qyts2"
+			            android:layout_width="135dp"
+			            android:layout_height="40dp"
+			            android:background="@drawable/clsbar"
+			            android:layout_marginTop="1dp"
+			            android:gravity="center"
+			            android:text="盘点作业"
+			            android:textColor="#6959CD"
+			            android:textSize="25dp" />
+	                <TextView
+			            android:id="@+id/tv_qyts9"
+			            android:layout_width="135dp"
+			            android:layout_height="40dp"
+			            android:background="@drawable/clsbar"
+			            android:layout_marginTop="1dp"
+			            android:gravity="center"
+			            android:text="入库上架"
+			            android:textColor="#6959CD"
+			            android:textSize="25dp" />
+	                <TextView
+			            android:id="@+id/tv_qyts4"
+			            android:layout_width="135dp"
+			            android:layout_height="40dp"
+			            android:background="@drawable/clsbar"
+			            android:layout_marginTop="1dp"
+			            android:gravity="center"
+			            android:text="作业中"
+			            android:textColor="#6959CD"
+			            android:textSize="25dp" />
+	        	</LinearLayout> 
+	        	<ListView
+                    android:id="@+id/listView2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="1350dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/clrlistback"
+		            android:cacheColorHint="#F0F8FF" 
+		            android:scrollbars="none" >
+                </ListView>
+	        	<ListView
+                    android:id="@+id/listView1"
+                    android:layout_above="@+id/listView2"
+                    android:layout_below="@+id/ll_maindisdata"
+                    android:layout_width="1350dp"
+                    android:layout_height="420dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/clrlistback"
+		            android:cacheColorHint="#F0F8FF" 
+		            android:scrollbars="none" >
+                </ListView>
+                
+			</RelativeLayout>
+        </HorizontalScrollView>     
+   </RelativeLayout>
+</RelativeLayout>

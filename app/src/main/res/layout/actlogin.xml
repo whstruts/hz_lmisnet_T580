@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="1dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:layout_marginTop="1dp"
+    android:background="@drawable/clrlistback" >
+    
+    <!-- 系统名称布局 -->
+      
+    <RelativeLayout
+       android:id="@+id/rl_sysname"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+       android:layout_toLeftOf="@+id/rl_login"
+       android:layout_above="@+id/rl_welpic"
+       android:layout_marginBottom="5dp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@drawable/clrlistback">
+       
+         <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/clrlistback"
+            android:orientation="vertical">"
+            
+              <TextView
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:textSize="50dp"
+		          android:textColor="#FF0000"
+		          android:layout_gravity="center_horizontal"
+		          android:text="WCPS" />     
+		       <TextView
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:textSize="50dp"
+		          android:textColor="#FF0000"
+		          android:layout_gravity="center_horizontal"
+		          android:text="无线小车拣选系统" />      
+          
+         </LinearLayout>
+      
+   </RelativeLayout>
+   
+   <!-- 底部按钮布局 -->
+   <RelativeLayout
+       android:id="@+id/rl_operbutton"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentRight="true"
+       android:background="@drawable/clrlistback" >
+       <Button
+           android:id="@+id/bt_Cnnt"
+           android:layout_width="120dp"
+           android:layout_height="50dp"
+           android:layout_marginLeft="5dp"
+           android:background="@drawable/clsbtnselect"
+           android:gravity="center"
+           android:textColor="#FFFFFF"
+           android:text="连接"
+           android:textSize="25dp" />
+     
+       <Button
+           android:id="@+id/bt_Update"
+           android:layout_width="120dp"
+           android:layout_height="50dp"
+           android:layout_marginLeft="2dp"
+           android:layout_toRightOf="@+id/bt_Cnnt"
+           android:background="@drawable/clsbtnselect"
+           android:gravity="center"
+           android:textColor="#FFFFFF"
+           android:text="更新程序"
+           
+           android:textSize="25dp" />
+  
+       <Button
+           android:id="@+id/bt_login"
+           android:layout_width="120dp"
+           android:layout_height="50dp"     
+           android:layout_toLeftOf ="@+id/bt_Exit"      
+           android:background="@drawable/clsbtnselect"
+           android:gravity="center"
+           android:textColor="#FFFFFF"
+           android:text="登录"
+           android:textSize="25dp" />
+       
+        <Button
+           android:id="@+id/bt_Exit"
+           android:layout_width="120dp"
+           android:layout_height="50dp"
+           android:layout_marginLeft="2dp"
+           android:layout_alignParentRight="true"
+           android:background="@drawable/clsbtnselect"
+           android:text="退出"
+           android:textColor="#FFFFFF"
+           android:textSize="25dp" />
+             
+   </RelativeLayout>
+   <!-- 温馨提示布局 -->
+   <RelativeLayout
+      android:id="@+id/rl_dismess"
+      android:layout_width="match_parent"
+      android:layout_height="35dp"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentRight="true"
+      android:layout_above="@+id/rl_operbutton"
+      android:background="@drawable/clrlistback" >  
+      
+      <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="35dp"
+         android:layout_alignParentLeft="true"
+         android:gravity="left"
+         android:text="温馨提示:"
+         android:textColor="#6959CD"
+         android:textSize="20dp" />
+      <TextView
+         android:id="@+id/tv_ts"
+         android:layout_alignParentRight="true"
+         android:layout_toRightOf="@+id/textView1"
+         android:layout_marginLeft="3dp"
+         android:layout_width="match_parent"
+         android:layout_height="35dp"
+         android:text="首次登陆请确认IP端口工号无误后先点击连接再点击登录"
+         android:ellipsize="marquee"
+         android:focusable="true"
+         android:focusableInTouchMode="true"
+         android:marqueeRepeatLimit="marquee_forever"
+         android:scrollHorizontally="true"
+         android:singleLine="true"
+         android:textColor="#6959CD"
+         android:textSize="20dp" />
+   </RelativeLayout> 
+   <!-- 欢迎图片布局 -->
+
+   <RelativeLayout
+       android:id="@+id/rl_welpic"
+       android:layout_width="match_parent"
+       android:layout_height="300dp"
+       android:layout_above="@+id/rl_dismess"
+       android:layout_alignParentLeft="true"
+       android:layout_toLeftOf="@+id/rl_login"
+       android:background="@drawable/loginback" >
+
+   </RelativeLayout>
+   
+   <!--登录信息 -->
+   <RelativeLayout
+      android:id="@+id/rl_login"
+      android:layout_width="550dp"
+      android:layout_height="match_parent"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentTop="true"
+      android:layout_above="@+id/rl_dismess"
+      android:background="@drawable/clrlistback" >
+      
+       <TextView
+                android:id="@+id/tv_SerIp"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="170dp"
+                android:background="@drawable/clspickmsgselect"
+                android:gravity="left"
+                android:textColor="#0000EE"
+                android:textSize="45dp" />
+
+            <TextView
+                android:id="@+id/tv_Port"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_alignLeft="@+id/tv_SerIp"
+                android:layout_below="@+id/tv_SerIp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/clspickmsgselect"
+                android:gravity="left"
+                android:textColor="#0000EE"
+                android:textSize="45dp" />
+
+            <TextView
+                android:id="@+id/tv_wlzxbm"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tv_Port"
+                android:layout_alignLeft="@+id/tv_Port"
+                android:layout_alignRight="@+id/tv_Port"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/clspickmsgselect"
+                android:gravity="center_vertical"
+                android:textColor="#0000EE"
+                android:textSize="31dp" />
+            
+            <TextView
+                android:id="@+id/tv_wrkno"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tv_wlzxbm"
+                android:layout_alignLeft="@+id/tv_wlzxbm"
+                android:layout_alignRight="@+id/tv_wlzxbm"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/clspickmsgselect"
+                android:gravity="left"
+                android:textColor="#0000EE"
+                android:textSize="45dp" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_SerIp"
+                android:layout_alignBottom="@+id/tv_SerIp"
+                android:layout_marginRight="23dp"
+                android:layout_toLeftOf="@+id/tv_Port"
+                android:gravity="right"
+                android:text="服务端IP:"
+                android:textColor="#8F8F8F"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_Port"
+                android:layout_alignBottom="@+id/tv_Port"
+                android:layout_alignRight="@+id/textView2"
+                android:gravity="right"
+                android:text="服务端端口:"
+                android:textColor="#8F8F8F"
+                android:textSize="25dp" />
+            
+             <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_alignRight="@+id/textView2"
+                android:gravity="right"
+                android:text="物流中心编码:"
+                android:layout_marginTop="20dp"
+                android:textColor="#8F8F8F"
+                android:textSize="25dp" />
+            
+<!--             android:layout_centerVertical="true" android:gravity="right" -->
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView8"
+                android:layout_marginTop="28dp"
+                android:layout_alignLeft="@+id/textView2"
+                android:text="员工编号:"
+                android:textColor="#8F8F8F"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_marginTop="25dp"
+                android:layout_alignLeft="@+id/textView2"
+                android:text="员工密码:"
+                android:textColor="#8F8F8F"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/tv_pwd"
+                android:layout_width="400dp"
+                android:layout_height="60dp"
+                android:layout_alignLeft="@+id/tv_wrkno"
+                android:layout_alignRight="@+id/tv_wrkno"
+                android:layout_below="@+id/tv_wrkno"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/clspickmsgselect"
+                android:gravity="left"
+                android:textColor="#0000EE"
+                android:textSize="45dp" 
+                android:password="true"/>
+       
+       
+       
+   </RelativeLayout>
+    
+</RelativeLayout>
